@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server && apt-get install -y openvpn
+RUN apt-get install -y openssh-server && apt-get install -y openvpn && apt-get install vim
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:password' |chpasswd
