@@ -2,7 +2,7 @@ FROM ubuntu:12.04
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-server && apt-get install -y openvpn
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:password' |chpasswd
